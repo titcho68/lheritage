@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'HÉRITAGE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Playfair Display", serif;
-        background-color: #f4f4f6;
-        color: #111;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'HÉRITAGE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #f8f6f4;
+      color: #111;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>L’HÉRITAGE</h1>
+    <nav>
+      <a href="#histoire">Histoire</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      header {
-        padding: 120px 20px 40px;
-      }
+  <section class="hero">
+    <h2>Une élégance intemporelle, entre mémoire et modernité</h2>
+    <img src="https://source.unsplash.com/1600x900/?heritage,fashion" alt="Visuel d'introduction">
+  </section>
 
-      nav a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #333;
-      }
+  <section id="histoire" class="section">
+    <h2>Notre Histoire</h2>
+    <p>La marque L’HÉRITAGE est née d’une volonté de transmettre des valeurs profondes : le respect des traditions, la beauté du passé et la puissance de l’authenticité. Chaque création raconte une histoire unique inspirée des racines culturelles et du savoir-faire artisanal.</p>
+  </section>
 
-      h1 {
-        font-size: 4em;
-        letter-spacing: 2px;
-      }
+  <section id="collection" class="section">
+    <h2>La Collection</h2>
+    <p>Des pièces soigneusement imaginées, entre sophistication moderne et patrimoine historique. Découvrez notre collection de vêtements et d’accessoires qui révèlent l’essence du luxe discret.</p>
+  </section>
 
-      .tagline {
-        font-size: 1.2em;
-        max-width: 600px;
-        margin: 30px auto;
-        line-height: 1.6;
-      }
+  <section id="contact" class="section">
+    <h2>Nous contacter</h2>
+    <p>Pour toute demande ou collaboration, écrivez-nous à l’adresse suivante : <strong>contact@lheritage.com</strong></p>
+  </section>
 
-      footer {
-        text-align: center;
-        padding: 30px;
-        font-size: 0.8em;
-        color: #666;
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <h1>L’HÉRITAGE</h1>
-      <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Histoire</a>
-        <a href="#">Collection</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-
-    <section class="tagline">
-      Une marque de fabrique par l’âme, la mémoire et l’héritage culturel. Chaque pièce raconte une histoire, entre passé et modernité.
-    </section>
-
-    <footer>
-      © 2025 L’HÉRITAGE – Tous les partis les plus saints.
-    </footer>
-  </body>
+  <footer>
+    &copy; 2025 L’HÉRITAGE. Tous droits réservés.
+  </footer>
+</body>
 </html>
