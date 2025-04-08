@@ -4,55 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L’HÉRITAGE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Police Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Playfair Display', serif;
-      background-color: #fdfaf6;
+      background-color: #f8f4ec;
       color: #111;
-      text-align: center;
+      font-family: 'Playfair Display', serif;
     }
 
     header {
-      padding: 120px 20px 60px;
-    }
-
-    h1 {
-      font-size: 4em;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 2.5rem;
       letter-spacing: 2px;
     }
 
-    p.description {
-      font-size: 1.3em;
-      max-width: 600px;
-      margin: 30px auto;
-      line-height: 1.6;
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .cta {
-      margin-top: 50px;
-    }
-
-    .cta a {
+    nav a {
       text-decoration: none;
-      padding: 12px 30px;
-      background: #111;
-      color: #fff;
-      font-weight: bold;
+      color: #111;
+      margin: 0 20px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
       letter-spacing: 1px;
     }
 
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x900/?desert,fashion');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .tagline {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.8rem;
+      color: #666;
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>L’HÉRITAGE</h1>
-    <p class="description">Une marque inspirée par l’âme, la mémoire, et l’élégance intemporelle.</p>
-    <div class="cta">
-      <a href="#">Découvrir la collection</a>
+
+  <header>L’HÉRITAGE</header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Histoire</a>
+    <a href="#">Collection</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Une élégance intemporelle</h1>
     </div>
-  </header>
+  </section>
+
+  <section class="tagline">
+    Une marque inspirée par l’âme, la mémoire et l’héritage culturel. Chaque pièce raconte une histoire, entre passé et modernité.
+  </section>
+
+  <footer>
+    © 2025 L’HÉRITAGE – Tous droits réservés.
+  </footer>
+
 </body>
 </html>
