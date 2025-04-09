@@ -95,9 +95,68 @@
       color: #666;
     }
   </style>
+  .collection {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.collection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+.item:hover img {
+  transform: scale(1.05);
+}
+
 </head>
 <body>
   <header>
+    <section class="collection">
+  <h2>Nouvelle Collection</h2>
+  <div class="grid">
+    <div class="item">
+      <img src="tshirt1.png" alt="T-shirt Constantine">
+      <p>Constantine</p>
+    </div>
+    <div class="item">
+      <img src="tshirt2.png" alt="T-shirt Alger">
+      <p>Alger</p>
+    </div>
+    <div class="item">
+      <img src="tshirt3.png" alt="T-shirt Gaza">
+      <p>Gaza</p>
+    </div>
+    <div class="item">
+      <img src="tshirt4.png" alt="T-shirt Tokyo">
+      <p>Tokyo</p>
+    </div>
+  </div>
+</section>
+
     <h1>L’HÉRITAGE</h1>
     <nav>
       <a href="#">Accueil</a>
