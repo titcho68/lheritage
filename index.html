@@ -3,56 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L'HÉRITAGE</title>
+  <title>L’HÉRITAGE</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
       font-family: 'Playfair Display', serif;
       background-color: #f8f6f4;
-      color: #111;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      color: #333;
     }
     header {
-      padding: 30px;
+      position: relative;
+      height: 100vh;
+      background: url(https://r4.wallpaperflare.com/wallpaper/1012/546/537/algeria-nature-wallpaper-18763d0800208c6870fc916eb862547a.jpg) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
+    header h1 {
+      font-size: 4rem;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
     nav {
-      text-align: center;
-      margin-bottom: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: 0.95rem;
+      color: white;
+      font-size: 1rem;
     }
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    .section {
+    section {
       padding: 60px 20px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: auto;
       text-align: center;
     }
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #666;
     }
   </style>
@@ -61,34 +56,20 @@
   <header>
     <h1>L’HÉRITAGE</h1>
     <nav>
-      <a href="#histoire">Histoire</a>
-      <a href="#collection">Collection</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Accueil</a>
+      <a href="#">Collection</a>
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Une élégance intemporelle, entre mémoire et modernité</h2>
-    <img src="https://source.unsplash.com/1600x900/?heritage,fashion" alt="Visuel d'introduction">
-  </section>
-
-  <section id="histoire" class="section">
-    <h2>Notre Histoire</h2>
-    <p>La marque L’HÉRITAGE est née d’une volonté de transmettre des valeurs profondes : le respect des traditions, la beauté du passé et la puissance de l’authenticité. Chaque création raconte une histoire unique inspirée des racines culturelles et du savoir-faire artisanal.</p>
-  </section>
-
-  <section id="collection" class="section">
-    <h2>La Collection</h2>
-    <p>Des pièces soigneusement imaginées, entre sophistication moderne et patrimoine historique. Découvrez notre collection de vêtements et d’accessoires qui révèlent l’essence du luxe discret.</p>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Nous contacter</h2>
-    <p>Pour toute demande ou collaboration, écrivez-nous à l’adresse suivante : <strong>contact@lheritage.com</strong></p>
+  <section>
+    <h2>Notre Philosophie</h2>
+    <p>Inspiré par l'élégance intemporelle et le riche héritage culturel, L’HÉRITAGE propose des pièces uniques alliant tradition et modernité.</p>
   </section>
 
   <footer>
-    &copy; 2025 L’HÉRITAGE. Tous droits réservés.
+    © 2025 L’HÉRITAGE – Tous droits réservés.
   </footer>
 </body>
 </html>
