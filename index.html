@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L’HÉRITAGE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -18,7 +20,6 @@
       line-height: 1.6;
     }
 
-    /* ----- HEADER ----- */
     header {
       position: relative;
       height: 100vh;
@@ -59,20 +60,21 @@
       transform: translateY(-1px);
     }
 
-    /* ----- COLLECTION ----- */
     #collection {
       padding: 80px 20px;
       text-align: center;
     }
 
     #collection h2 {
+      font-family: 'Libre Baskerville', serif;
       font-size: 2.5rem;
       margin-bottom: 40px;
+      color: #6BA292;
     }
 
     .collection-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       max-width: 1000px;
       margin: 0 auto;
@@ -81,7 +83,7 @@
     .collection-item {
       overflow: hidden;
       border-radius: 8px;
-      background-color: #fff;
+      background-color: #f0f4f0;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -104,11 +106,11 @@
 
     .item-name {
       padding: 10px 0;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 500;
+      font-family: 'Libre Baskerville', serif;
     }
 
-    /* ----- FOOTER ----- */
     footer {
       text-align: center;
       padding: 30px;
@@ -156,6 +158,3 @@
   </footer>
 </body>
 </html>
-
-
-
