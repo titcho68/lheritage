@@ -6,63 +6,88 @@
   <title>L’HÉRITAGE</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Playfair Display', serif;
       background-color: #f8f6f4;
       color: #111;
+      line-height: 1.6;
     }
-
     header {
       position: relative;
       height: 100vh;
-      background: url(https://r4.wallpaperflare.com/wallpaper/1012/546/537/algeria-nature-wallpaper-18763d0800208c6870fc916eb862547a.jpg) no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1562158070-57e4f71a408b?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
     }
-
     header h1 {
       font-size: 4rem;
       color: white;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-
     nav {
       position: absolute;
       top: 30px;
       left: 30px;
     }
-
-  nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #111;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-  transform: translateY(-1px);
-}
-
-
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
-
+    nav a:hover {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      transform: translateY(-1px);
+    }
     section {
       padding: 60px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
     }
-
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .collection-item {
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .collection-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .collection-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .collection-item:hover img {
+      transform: scale(1.05);
+    }
+    .item-name {
+      padding: 10px 0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -76,15 +101,32 @@ nav a:hover {
     <h1>L’HÉRITAGE</h1>
     <nav>
       <a href="#">Accueil</a>
-      <a href="#">Collection</a>
+      <a href="#collection">Collection</a>
       <a href="#">À propos</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Notre Philosophie</h2>
-    <p>Inspiré par l'élégance intemporelle et le riche héritage culturel, L’HÉRITAGE propose des pièces uniques alliant tradition et modernité.</p>
+  <section id="collection">
+    <h2>Nouvelle Collection</h2>
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="https://raw.githubusercontent.com/titcho68/lheritage/main/assets/tshirt1.png" alt="T-shirt Constantine">
+        <div class="item-name">T-shirt Constantine</div>
+      </div>
+      <div class="collection-item">
+        <img src="https://raw.githubusercontent.com/titcho68/lheritage/main/assets/tshirt2.png" alt="T-shirt Alger">
+        <div class="item-name">T-shirt Alger</div>
+      </div>
+      <div class="collection-item">
+        <img src="https://raw.githubusercontent.com/titcho68/lheritage/main/assets/tshirt3.png" alt="T-shirt Sahara">
+        <div class="item-name">T-shirt Sahara</div>
+      </div>
+      <div class="collection-item">
+        <img src="https://raw.githubusercontent.com/titcho68/lheritage/main/assets/tshirt4.png" alt="T-shirt Kabyle">
+        <div class="item-name">T-shirt Kabyle</div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -92,4 +134,5 @@ nav a:hover {
   </footer>
 </body>
 </html>
+
 
