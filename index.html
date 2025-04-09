@@ -1,12 +1,13 @@
+from IPython.display import display, HTML
 
-
+html_code = """
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L’HÉRITAGE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -14,12 +15,11 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Playfair Display', serif;
-      background-color: #f8f6f4;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #e8dcc5; /* sable du désert */
       color: #111;
       line-height: 1.6;
     }
-
     header {
       position: relative;
       height: 100vh;
@@ -28,63 +28,59 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
     }
-
     header h1 {
       font-size: 4rem;
       color: white;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-
     nav {
       position: absolute;
       top: 30px;
       left: 30px;
     }
-
     nav a {
-      margin-right: 20px;
+      margin: 0 15px;
       text-decoration: none;
       color: #111;
       font-size: 0.85rem;
-      font-weight: bold;
+      font-weight: 500;
       letter-spacing: 1px;
       text-transform: uppercase;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+      text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
     }
-
     nav a:hover {
       text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
       transform: translateY(-1px);
     }
-
-    #collection {
+    .collection {
       padding: 80px 20px;
       text-align: center;
     }
 
-    #collection h2 {
-      font-family: 'Libre Baskerville', serif;
+    .collection h2 {
       font-size: 2.5rem;
       margin-bottom: 40px;
-      color: #6BA292;
+      color: #6BA292; /* vert pastel */
+      font-family: 'Orbitron', sans-serif;
     }
 
     .collection-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 40px;
-      max-width: 1000px;
+      max-width: 1400px;
       margin: 0 auto;
     }
 
     .collection-item {
-      overflow: hidden;
-      border-radius: 8px;
       background-color: #f0f4f0;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      width: 280px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -97,7 +93,7 @@
 
     .collection-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .collection-item:hover img {
@@ -106,20 +102,19 @@
 
     .item-name {
       padding: 10px 0;
-      font-size: 1.3rem;
-      font-weight: 500;
-      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       font-size: 0.9rem;
       color: #666;
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>L’HÉRITAGE</h1>
@@ -131,24 +126,24 @@
     </nav>
   </header>
 
-  <section id="collection">
+  <section id="collection" class="collection">
     <h2>Nouvelle Collection</h2>
     <div class="collection-grid">
       <div class="collection-item">
-        <img src="tshirt1.png" alt="T-shirt Constantine">
-        <div class="item-name">T-shirt Constantine</div>
+        <img src="tshirt1.png" alt="Aéroport Houari Boumédiène">
+        <div class="item-name">Aéroport d'Alger</div>
       </div>
       <div class="collection-item">
-        <img src="tshirt2.png" alt="T-shirt Alger">
-        <div class="item-name">T-shirt Alger</div>
+        <img src="tshirt2.png" alt="Aéroport Mohamed Boudiaf">
+        <div class="item-name">Aéroport de Constantine</div>
       </div>
       <div class="collection-item">
-        <img src="tshirt3.png" alt="T-shirt Gaza">
-        <div class="item-name">T-shirt Gaza</div>
+        <img src="tshirt3.png" alt="Aéroport Ahmed Ben Bella">
+        <div class="item-name">Aéroport d'Oran</div>
       </div>
       <div class="collection-item">
-        <img src="tshirt4.png" alt="T-shirt Tokyo">
-        <div class="item-name">T-shirt Tokyo</div>
+        <img src="tshirt4.png" alt="Aéroport de Tamanrasset">
+        <div class="item-name">Aéroport de Tamanrasset</div>
       </div>
     </div>
   </section>
@@ -158,3 +153,7 @@
   </footer>
 </body>
 </html>
+"""
+
+# Displaying HTML directly in notebook
+display(HTML(html_code))
